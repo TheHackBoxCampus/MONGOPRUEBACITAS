@@ -1,0 +1,46 @@
+use("citas_prueba");
+
+db.createCollection("tipo_documento");
+db.createCollection("genero")
+db.createCollection("acudiente")
+db.createCollection("usuario")
+db.createCollection("cita")
+db.createCollection("estado_cita")
+db.createCollection("medico")
+db.createCollection("especializacion")
+db.createCollection("consultorio")
+
+
+// inserts 
+
+
+use("citas_prueba");
+
+db.tipo_documento.insertOne({
+    nombre: "documento identidad",
+    abreviatura: "TI"
+})
+
+
+db.genero.insertOne({
+    nombre: "masculino",
+    abreviatura: "M"
+})
+
+
+db.acudiente.insertOne({
+    nombreCompleto: "Oscar arriba",
+    telefono: "12321311",
+    direccion: "calle 31"
+})
+
+db.usuario.insertOne({
+    nombre: "oscar",
+    segundo_nombre: "mercedez",
+    apellido: "mercedez",
+    segundo_apellido: "marin",
+    telefono: "313213212",
+    direccion: "calle 3",
+    email: ""
+    
+})
